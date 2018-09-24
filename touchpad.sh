@@ -9,11 +9,11 @@ check_state() {
 case "${1}" in
 [oO][nN])
 	t=0
-	msg=${1}
+	msg=${1^^}
 	;;
 [oO][fF][fF])
 	t=1
-	msg=${1}
+	msg=${1^^}
 	;;
 --help)
 	echo "Usage: ${0} [on|off]"
